@@ -1,0 +1,1 @@
+export const VIVIENDAS = ["DEPARTAMENTO", "CASA", "VILLA", "TERRENO"];
