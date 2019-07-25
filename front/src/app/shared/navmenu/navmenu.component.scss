@@ -1,0 +1,23 @@
+.navbar.navbar-expand-md ul.navbar-nav ul.ts-child {
+  background-color: #fff;
+  box-shadow: 0 0.3125rem 1.5625rem rgba(0, 0, 0, .25);
+  position: absolute;
+  height: auto !important;
+  width: auto;
+  overflow: visible;
+  opacity: 0;
+}
+
+ul.navbar-nav ul.ts-child {
+  border-radius: .125rem;
+  list-style: none;
+  min-width: 13rem;
+  padding-left: 0;
+  height: 0;
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  transition: .3s ease;
+  pointer-events: none;
+  z-index: 2;
+}

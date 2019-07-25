@@ -1,0 +1,152 @@
+<!-- HERO MAP
+   =================================================================================================================-->
+<section id="ts-hero" class=" mb-0">
+
+  <!--Fullscreen mode-->
+  <div class="ts-full-screen d-flex flex-column">
+
+    <!-- FORM
+    =========================================================================================================-->
+    <section class="ts-shadow__sm ts-z-index__2 ts-bg-light">
+
+      <!--Collapse Button-->
+      <div class="position-absolute w-100 ts-bottom__0 ts-z-index__1 text-center ts-h-0">
+        <button type="button" class="ts-circle p-3 bg-white ts-shadow__sm border-0 ts-push-up__50 mt-2" data-toggle="collapse" data-target="#form-collapse">
+          <fa-icon [icon]="icon"></fa-icon>
+        </button>
+      </div>
+
+      <!--Form-->
+      <div id="form-collapse" class="collapse ts-xs-hide-collapse show">
+        <form class="ts-form mb-0 d-flex flex-column flex-sm-row py-2 pl-2 pr-3">
+
+          <!--Keyword-->
+          <div class="form-group m-1 w-100">
+            <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Address, City or ZIP">
+          </div>
+
+          <!--Category-->
+          <div class="form-group m-1 w-100">
+            <select class="custom-select" id="type" name="category">
+              <option value="">Type</option>
+              <option value="1">Apartment</option>
+              <option value="2">Villa</option>
+              <option value="3">Land</option>
+              <option value="4">Garage</option>
+            </select>
+          </div>
+
+          <!--Status-->
+          <div class="form-group m-1 w-100">
+            <select class="custom-select" id="status" name="status">
+              <option value="">Status</option>
+              <option value="1">Sale</option>
+              <option value="2">Rent</option>
+            </select>
+          </div>
+
+          <!--Min Area-->
+          <div class="input-group m-1 w-100">
+            <input type="text" class="form-control border-right-0" id="min-area" placeholder="Min Area">
+            <div class="input-group-append">
+              <span class="input-group-text bg-white border-left-0">m<sup>2</sup></span>
+            </div>
+          </div>
+
+          <!--Max Area-->
+          <div class="input-group m-1 w-100">
+            <input type="text" class="form-control border-right-0" id="max-area" placeholder="Max Area">
+            <div class="input-group-append">
+              <span class="input-group-text bg-white border-left-0">m<sup>2</sup></span>
+            </div>
+          </div>
+
+          <!--Min Price-->
+          <div class="input-group m-1 w-100">
+            <input type="text" class="form-control border-right-0" id="min-price" placeholder="Min Price">
+            <div class="input-group-append">
+              <span class="input-group-text bg-white border-left-0">$</span>
+            </div>
+          </div>
+
+          <!--Max Price-->
+          <div class="input-group m-1 w-100">
+            <input type="text" class="form-control border-right-0" id="max-price" placeholder="Max Price">
+            <div class="input-group-append">
+              <span class="input-group-text bg-white border-left-0">$</span>
+            </div>
+          </div>
+
+          <!--Submit button-->
+          <div class="form-group m-1 ml-auto">
+            <button type="submit" class="btn btn-primary" id="search-btn">Buscar</button>
+          </div>
+        </form>
+      </div>
+      <!--end Form-->
+
+    </section>
+    <!--end ts-form__grid-->
+    <!-- RESULTS & MAP
+    =========================================================================================================-->
+    <div class="d-flex h-100">
+
+      <!-- RESULTS LEFT
+      =====================================================================================================-->
+      <div class="ts-results__vertical ts-results__vertical-list ts-shadow__sm scrollbar-inner bg-white">
+
+        <!--Results wrapper-->
+        <section id="ts-results">
+          <div class="ts-results-wrapper">
+            <div class="ts-result-link" data-ts-id="3" data-ts-ln="2">
+              <a href="detail-01.html" class="card ts-item ts-card ts-result">
+                <div href="detail-01.html" class="card-img ts-item__image" style="background-image: url(assets/img/img-item-thumb-03.jpg)"></div>
+                <div class="card-body">
+                  <div class="ts-item__info-badge">$45,900</div>
+                  <figure class="ts-item__info">
+                    <h4>Family Villa</h4>
+                    <aside>
+                      <i class="fa fa-map-marker mr-2"></i>593 Grove Place, Crawfordsville
+                    </aside>
+                  </figure>
+                  <div class="ts-description-lists">
+                    <dl>
+                      <dt>Area</dt>
+                      <dd>310m2</dd>
+                    </dl>
+                    <dl>
+                      <dt>Baños</dt>
+                      <dd>3</dd>
+                    </dl>
+                    <dl>
+                      <dt>Habitaciones</dt>
+                      <dd>2</dd>
+                    </dl>
+                    <dl>
+                      <dt>Cuartos</dt>
+                      <dd>4</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="card-footer"><span class="ts-btn-arrow">Detail</span></div>
+              </a>
+            </div>
+          </div>
+</section>
+
+      </div>
+      <!--end ts-results-vertical-->
+      <!-- MAP
+      =====================================================================================================-->
+      <div class="ts-map w-100">
+       <mapa></mapa>
+      </div>
+
+    </div>
+    <!--end d-flex h-100-->
+
+  </div>
+  <!--end full-screen-->
+
+</section>
+<!--end ts-hero-->
