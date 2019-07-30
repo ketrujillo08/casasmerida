@@ -7,3 +7,7 @@
 /back/dist
 /back/.git
 /.vs
+/admin/node_modules
+/admin/.vs
+/admin/dist
+/admin/.git
